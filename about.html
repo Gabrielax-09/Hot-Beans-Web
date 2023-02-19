@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us- Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" 
+rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4f9da7970e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Hot Beans Web-1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>                </i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="our-team.html">OUR TEAM</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="apply.html">APPLY</a>
+                    </li>
+                    <li>
+                        <a href="vacancies.html">VACANCIES</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+        <h1>About Us</h1>
+        <p>KNOW MORE ABOUT US</p>
+</header>
+
+<!--About us content-->
+
+<section class="about-us">
+<section class="we-r-hbw">
+<div class="row">
+    <div class="about-us-col one">
+        <h1> <span>W</span>e are Hot Beans <span>W</span>eb</h1>
+        <p>We are Hot Beans web also called HBW we work wit a lot of famous comoaies such as Primark, MCdonalds and Google..</p>
+
+    </div>
+    <div class="about-us-col">
+        <img src="images/businessbuilding.jpg" alt="">
+    </div>
+</div>
+</section>
+
+<section class="history">
+    <div class="row three">
+        <div class="about-us-col three">
+            <h1><span>O</span>ur <span>H</span>istory</h1>
+            <p>Hot Beans Web was set up in 2010 by Christina Falou because of his passion for web development. She decided to create a business after she couldnt find any places to get recruited. Raciscm unfortunatley made the search for job really hard for her. After many sad and discriminating experiences she decided to create her own business with no discrimination.
+
+                The orgin of the name HOT Beans is a funny story. When Miss Falou was thinking of creating her own business and plan all the stages. She got really hungry and craved Hot Beans. While eating Hot Beans she continued planning the business. Due to the delicius Beans , she made great decisions that have affected her and all the members of Hot Beans Web.
+                
+                Now in 2023 Hot Beans Web works for several companies and provides the best experience possible. We are always looking to grow so check out the job openings to see if you can join the Hot Beans Web family.</p>
+        </div>
+    
+    </div>
+</section>
+
+<section class="our-v">
+    <div class="row two">
+        <div class="about-us-col two">
+            <h1> <span>O</span>ur <span>V</span>alues</h1>
+            <p>Our company main aim to be able to provide the best possible service to our clients. Any request made by you will be met by us and we will not stop until we can fulfil it.
+
+                Hot Beans Web was created so that any person or business
+                 can have a site. And that the site we make is the ideal
+                  vision of what they want in a web page. We pride ourselves
+                   on our excellent customer service and our ability to produce
+                    the highest quality website. One thing we value a lot is no discrimination
+                     within the company and with the clients. Everone should and must be welcommed with open arem.  </p>
+    
+        </div>
+        <div class="about-us-col three">
+            <img src="images/values.png" alt="">
+        </div>
+    </div>
+    </section>
+
+</section>
+<section class="our-team-link">
+<section class="our-team">
+    <div class="teaming">
+    <h2>LEARN MORE ABOUT OUR TEAM</h2>
+    <div class="join-btn">
+        <a href="our-team.html">our team</a>
+    </div>
+    </div>
+</section>
+</section>
+   
+    
+
+
+
+
+
+
+<section class="footer">
+
+    <p>Copyright 2023 &copy; Hot Beans Web Limeted</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made by Gabriela Manu</p>
+</section>
+
+<script>
+    const nav = document.querySelector('nav')
+    
+    window.addEventListener('scroll', () => {
+        console.log(window.scrollY);
+        console.log(window.scrollX);
+        if (window.scrollY>=180) {
+            nav.classList.add('active_nav');
+        } else {
+            nav.classList.remove('active_nav')
+            
+        }
+    })
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu (){
+    navLinks.style.right = "0"
+    }
+    function hideMenu (){
+    navLinks.style.right = "-250px"
+    }   
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" 
+rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4f9da7970e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <section class="course-header">
+        <nav>
+            <a href="index.html"><img src="images/Hot Beans Web-1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>                </i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="our-team.html">OUR TEAM</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="apply.html">APPLY</a>
+                    </li>
+                    <li>
+                        <a href="vacancies.html">VACANCIES</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+<div class="text-box course-banner">
+    <h1>COURSES</h1>
+    <p>You want to strengthen your skills and get a certificate? <br> <br> Then take a look  at the recommended corses</p>
+</div>
+
+</section>
+</header>
+           
+    <section class="courses ">
+        <div class="course-p">
+        <h2> <span>R</span>ECOMMENDED <span>C</span>OURSES</h2>
+        <p> You want to gain and improve your web developmemnt designeing skils ? The read the information on this page. On this page, you find information and links to some web development courses.</p>
+        </div>
+         <div class="row">
+            
+            <div class="course-col-p">
+                <h3>Codecademy</h3>
+                <a href="https://www.codecademy.com"> <img src="images/codecademy_logo.png" class="one"></a>
+                <p>
+                    "Empower people to transform their personal and professional lives by helping them learn modern skills" -Codecademy
+                    Has helped 50 mil. People
+                    Served 179 Countries
+                    200+ Lessons to Explore
+                </p>
+                <a href="https://www.codecademy.com">Go to Codecademy</a>
+                
+            </div>
+
+            <div class="course-col-p">
+                <h3>UCD</h3>
+                <a href="https://www.ucd.ie/professionalacademy/findyourcourse/professional_diploma_in_software_development/"><img src="images/ucdlogo.png"></a>
+                <p>
+                    "Open the door to your new career with this part-time course that you can study alongside your current role. You do not need prior programming expertise, but you should be eager to learn.
+                    If you are new to software development or youre unsure of how your coding skills compare, we highly recommend you take our short “Coding Challenge” before you begin. Ask your Education Consultant for more details. Download your brochure to get started today!"- UCD
+                </p>
+                <a href="https://www.ucd.ie/professionalacademy/findyourcourse/professional_diploma_in_software_development/">Go to UCD</a>
+            </div>
+
+            <div class="course-col-p">
+                <h3>Udemy</h3>
+                <a href="https://www.udemy.com/"><img src="images/udemy-logo2.png"></a>
+                <p>
+                    Trusted by 13.4K+ businesses around the world
+"Learners around the world are launching new careers, advancing in their fields, and enriching their lives. The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on."- Udemy
+                </p>
+                <a href="https://www.udemy.com/">Go to Udemy</a>
+            </div>
+            
+        </div>
+        
+         <!--End of About section-->
+</section>
+
+<section class="footer">
+
+    <p>Copyright 2023 &copy; Hot Beans Web Limeted</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made by Gabriela Manu</p>
+</section>
+
+<script>
+    const nav = document.querySelector('nav')
+    
+    window.addEventListener('scroll', () => {
+        console.log(window.scrollY);
+        console.log(window.scrollX);
+        if (window.scrollY>=180) {
+            nav.classList.add('active_nav');
+        } else {
+            nav.classList.remove('active_nav')
+            
+        }
+    })
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu (){
+    navLinks.style.right = "0"
+    }
+    function hideMenu (){
+    navLinks.style.right = "-250px"
+    }   
+</script>
+</body>
+</html>

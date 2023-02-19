@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us - Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" 
+rel="stylesheet">
+<script src="https://kit.fontawesome.com/4f9da7970e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="contact-page">
+        <header>
+        <nav>
+            <a href="index.html"><img src="images/Hot Beans Web-1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>              
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="our-team.html">OUR TEAM</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="apply.html">APPLY</a>
+                    </li>
+                    <li>
+                        <a href="vacancies.html">VACANCIES</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        </header>
+<div class="cta-body">
+<div class="contact-text-box">
+    <h1>Contact</h1>
+    <p>Contact us for  any matter</p> 
+</div>
+<div class="cta-container">
+    <div class="contact-info">
+        <div class="cta-box">
+            <div class="cta-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="cta-text">
+                    <h2>Adress</h2>
+                    <p>118, Erwood Road <br>SE7 8HA, England <br>United Kingdom of Great Britain and Northern Ireland, GB</p>
+                </div>
+
+        </div>
+
+        <div class="cta-box">
+            <div class="cta-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="cta-text">
+                    <h2>Phone</h2>
+                    <p>+447826973976</p>
+                </div>
+            
+        </div>
+
+        <div class="cta-box">
+            <div class="cta-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="cta-text">
+                    <h2>Email</h2>
+                    <p>Hot-Beans-Web-gmbh@gmail.com</p>
+                </div>
+        </div>
+    </div>
+        <div class="cta-form">
+            <form>
+                <h2><span>S</span>end us a <span>M</span>essage</h2>
+                <div class="input-box">
+                    <input required="required" type="text" name="" id="">
+                    <label for="fullname">Full Name</label>
+                </div>
+
+                <div class="input-box email">
+                    <input required="required" type="email" name="" id="">
+                    <label for="email">Your Email</label>
+                </div>
+
+                <div class="input-box">
+                    <textarea required="required" ></textarea>
+                    <label for="message">Type your Message</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" name="" value="Send">
+                    
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+    </section>
+
+   
+
+<section class="footer">
+
+    <p>Copyright 2023 &copy; Hot Beans Web Limeted</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made by Gabriela Manu</p>
+</section>
+
+<script>
+    const nav = document.querySelector('nav')
+    
+    window.addEventListener('scroll', () => {
+        console.log(window.scrollY);
+        console.log(window.scrollX);
+        if (window.scrollY>=180) {
+            nav.classList.add('active_nav');
+        } else {
+            nav.classList.remove('active_nav')
+            
+        }
+    })
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu (){
+    navLinks.style.right = "0"
+    }
+    function hideMenu (){
+    navLinks.style.right = "-250px"
+    }   
+</script>
+</body>
+</html>

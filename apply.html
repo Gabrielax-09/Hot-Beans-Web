@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form - Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" 
+rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4f9da7970e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <section class="apply-header">
+        <nav>
+            <a href="index.html"><img src="images/Hot Beans Web-1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>                </i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="our-team.html">OUR TEAM</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="apply.html">APPLY</a>
+                    </li>
+                    <li>
+                        <a href="vacancies.html">VACANCIES</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+<div class="apply-text-box">
+    <h1>Application form</h1>
+    <p>Apply now to become one of us</p> 
+</div>
+</header>
+    </section>
+    <!--About section-->
+<div class="container-apply">
+    <div class="apply-box">
+
+    <h1>
+        <span>A</span>pplication <span>F</span>orm
+    </h1>
+    <form action="">
+        <div class="form-container">
+            <div class="form-control">
+                <label for="first-name">First Name <span>(required)</span></label>
+                <input id="first-name" name="first-name" 
+                placeholder="Enter First name..." required type="text"/>
+            </div>
+
+            <div class="form-control">
+                <label for="last-name">Last Name <span>(required)</span></label>
+                <input id="last-name" name="last-name" required placeholder="Enter Last name..." type="text">
+            </div>
+
+            <div class="form-control">
+                <label for="dob">Date of Birth <span>(required)</span></label>
+                <input value="" id="dob" name="dob" type="date">
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email <span>(required)</span></label>
+                <input id="email" name="email" required placeholder="Enter Email-adress" type="text">
+            </div>
+
+            <div class="form-control">
+                <label for="Position">Position <span>(required)</span></label>
+                <Select required id="position" name="position">
+                    <option value="position">Select wanted position</option>
+                    <option value="position">Back-end web developer</option>
+                    <option value="position">Front-end web developer</option>
+                    <option value="position">Full-stack developers</option>
+                    <option value="position">Webmasters</option>
+                    <option value="position">Web designer</option>
+                </Select>
+            </div>
+
+            <div class="text-area-control">
+                <label for="adress">Adress <span>(required)</span></label>
+                <textarea name="adress" id="aress" cols="50" rows="4" 
+                placeholder="Enter Adress" required></textarea>
+            </div>
+
+            <div class="form-control">
+                <label for="country">Country <span>(required)</span></label>
+                <input id="country" name="country" placeholder="Enter Country" required type="text">
+            </div>
+
+    <div class="form-control">
+        <label for="city">City <span>(required)</span></label>
+        <input id="city" name="city" placeholder="Enter City name..." required type="text">
+    </div>
+
+    <div class="form-control">
+        <label for="postcoe">Postcode <span>(required)</span></label>
+        <input id="postcoe" name="postcode" required placeholder="Enter Postcode" type="text">
+    </div>
+
+    <div class="form-control">
+        <label for="cv">Upload CV <span>(required)</span></label>
+        <input id="cv" name="Upload" required type="file">
+    </div>
+
+    <div class="text-area-control">
+        <label for="msg">Message</label>
+        <textarea name="msg" id="msg" placeholder="Type us a message" cols="50" rows="4"></textarea>
+        </textarea>
+    </div>
+
+        </div>
+        <div class="button-container">
+            <button type="submit">Apply now</button>
+        </div>
+        </div>
+    </form>
+
+    <section class="our-team">
+        <div class="teaming">
+        <h2>Get to know more about the vacancies</h2>
+        <div class="join-btn">
+            <a href="vacancies.html">vacancies</a>
+        </div>
+        </div>
+    </section>
+</div>
+
+<section class="footer">
+
+    <p>Copyright 2023 &copy; Hot Beans Web Limeted</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made by Gabriela Manu</p>
+</section>
+
+<script>
+    const nav = document.querySelector('nav')
+    
+    window.addEventListener('scroll', () => {
+        console.log(window.scrollY);
+        console.log(window.scrollX);
+        if (window.scrollY>=180) {
+            nav.classList.add('active_nav');
+        } else {
+            nav.classList.remove('active_nav')
+            
+        }
+    })
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu (){
+    navLinks.style.right = "0"
+    }
+    function hideMenu (){
+    navLinks.style.right = "-250px"
+    }   
+</script>
+</body>
+</html>

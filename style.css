@@ -1,0 +1,1251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0, 0.7)), url(images/Homep3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    max-height: 10vh;
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+    background-color:  rgba(45, 23, 15, 0.677);
+    
+
+}
+.active_nav{
+    background-color: rgb(45, 23, 15);
+margin-top: 0;
+    max-height: 8vh;
+
+}
+nav img{
+    width: 150px;
+    
+}
+.nav-links {
+    flex:1;
+    text-align: right;
+    padding-right: 5%;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(86, 63, 55);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+.text-box{
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1;
+}
+.text-box h1{
+    font-size: 58px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.text-box p{
+    text-transform: uppercase;
+    color: white;
+    padding: 1%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.join-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.join-btn:hover{
+    border: 2px solid white ;
+    background: rgb(60, 30, 19) ;
+    transition: 0.8s;
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 88px;
+    transition: 0.8s;
+    
+}
+
+ .teaming{
+    margin: 35px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/teamhp4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.teaming a {
+
+    text-transform: uppercase;
+    text-decoration: solid;
+    color: white;
+    
+}
+
+.about h2{
+    color:rgb(60, 30, 19) ;
+    letter-spacing: 1px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.about h2 span{
+color: black;
+
+}
+
+
+.about .row{
+    justify-content: space-around;
+}
+
+.about-col{
+    flex-basis: 31%;
+    background: rgb(218, 193, 179);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 35px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.about-col h3{
+    text-transform: uppercase;
+}
+
+.about-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+.about-col p{
+    padding: 1%;
+}
+
+.about-col:hover{
+    box-shadow: 0 0 20px 0px rgba(73, 31, 22, 0.279);
+}
+
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 3%;
+    padding-top: 44px;
+
+}
+.our-team h2{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.courses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0;
+} 
+.courses h2{
+    color:rgb(60, 30, 19) ;
+    letter-spacing: 1px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.courses h2 span{
+    color: black;
+}
+.apply{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0
+}
+.apply h2{
+    color:rgb(60, 30, 19) ;
+    letter-spacing: 1px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.apply h2 span{
+    color: black;
+}
+nav .fas{
+    display: none;
+}
+nav .fas.fa-bars{
+    padding-right: 5%;
+    color: white;
+    padding-bottom: 5%;
+}
+@media(max-width: 950px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .nav-links ul li{
+        display: block;
+        align-self: flex-end;
+    }
+    .nav-links{
+        position: absolute;
+        background:rgb(85, 56, 45);
+        height: 200vh;
+        top: 0;
+        right: -250px;
+        text-emphasis: left;
+        width: 150px;
+        z-index: 4;
+        transition: 1s;
+        text-align: center;
+    }
+nav{
+    background-color:rgba(45, 23, 15, 0.7);
+
+}
+
+
+    nav .fas{
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 10% ;
+        padding-top: 5%;
+    }
+    .nav-links ul {
+        padding-top: 15px;
+    }
+
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 5px;
+        background: rgb(45, 23, 16);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 80%
+}
+nav .fas.fa-times{
+    margin-top: 5%;
+}
+}
+
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: rgb(146, 127, 117);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 35px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+.course-col p{
+    padding: 1%;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(73, 31, 22, 0.279);
+}
+
+@media(max-width: 725px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.cta{
+    margin: 100px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/ctabanner3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h2{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+    letter-spacing: 1.5px;
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.apply h3{
+
+    text-transform: uppercase ;
+    padding: 0;
+}
+
+.apply p{
+    padding-bottom: 2%;
+    padding-top:2% ;
+}
+
+.em-fb{
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.em-fb-col{
+    flex-basis: 40%;
+    border-radius: 10px;
+    margin-bottom:2%;
+    text-align: left;
+    background: rgb(218, 193, 179);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.em-fb-col img{
+    
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    width: 100%;
+
+}
+.em-fb-col p{
+    padding: 0;
+
+}
+
+.em-fb-col h3{
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.em-fb-col h4{
+
+    margin-top: 10px;
+    text-align: left;
+}
+.em-fb-col .fa-solid , .fa-regular{
+    color: rgb(51, 38, 30);
+}
+
+@media(max-width: 725px){
+    .em-fb-col img{
+
+        margin-left: opx;
+        margin-right: 15px;
+
+    }
+}
+
+@media(max-width:798px){
+    .em-fb .row{
+        flex-direction: column;
+    }
+}
+
+.footer{
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+    text-align: center;
+    padding-bottom: 2%;
+    background: rgb(200, 177, 143);
+}
+
+.footer p{
+    padding: 0;
+
+}
+
+.sub-header{
+
+    height: 65vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/Aboutp3.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    padding-top: 35vh;
+    font-size: 58px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.sub-header p{
+    color: white;
+    font-size: 25px;
+    padding: -13px;
+
+}
+
+.about-us{
+    width: 100%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.about-us-col{
+    flex-basis: 48%;
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.about-us-col img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+.about-us-col h1{
+    padding-top: 0;
+    text-transform: uppercase;
+    color: rgb(45, 23, 15);
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-us-col p{
+    padding-top: 15px;
+    padding-right: 25px;
+
+}
+
+.about-us-col span{
+    color: black
+}
+
+.about-us-col.one{
+padding-top: 10vh;
+}
+
+.row.two{
+    flex-direction: row-reverse;
+}
+
+.history .row{
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.history .about-us-col img{
+    width: 100%;
+    margin-top: -50px;
+    
+}
+
+.our-team-link .teaming{
+    margin: 35px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/teamhp4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.team-header{
+    min-height: 65vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0, 0.7)), url(images/teamhp4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.team-textbox h1{
+    color: white;
+    padding-top: 35vh;
+    font-size: 55px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team-container{
+    margin: 20px 40px;
+
+}
+
+.sub-heading{
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+.sub-heading h1{
+    color: rgb(60, 30, 19);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.sub-heading span{
+    color: black;
+}
+
+.profiles{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80ox;
+}
+
+.profiles .two{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80ox;
+}
+
+.profile{
+    flex-basis: 290px;
+    padding-top: 3% ;
+}
+
+.profile .profile-img{
+    height: 260px;
+    width: 260px;
+    border-radius: 10px;
+    filter: grayscale(50%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.profile:hover .profile-img{
+    filter: grayscale(0);
+}
+
+.team-name{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profile h4{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.profile p{
+    font-size: 16px;
+    margin-top: -40px;
+    text-align: justify;
+}
+
+@media (max-width:1291px){
+    .profiles{
+        flex-direction: column;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .profile p{
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+    }
+}
+
+.apply-link .cta{
+        margin: 100px auto;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/apply2.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px;
+        text-align: center;
+        padding: 20px 0;
+        text-transform: uppercase;
+}
+
+.apply-link .cta h2{
+        font-size: 20px;
+
+}
+
+.about-link .teaming{
+   
+    margin: 100px auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/Aboutp3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px;
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.about-link .teaming h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.course-header{
+    min-height: 65vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0, 0.7)), url(images/people-coding4.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+ .course-col-p{
+    background: rgb(255, 255, 255);
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 35px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-color:rgb(52, 36, 18) ;
+    border-style: solid;
+    
+}
+
+.course-col-p p{
+    padding-top:6% ;
+}
+
+.course-col-p h3{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.course-col-p a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.course-col-p img{
+    height: auto;
+    padding-top: 3%;
+    width: 30%;
+    
+}
+
+ .course-p h2{
+    margin-top: 5%;
+}
+
+ .course-banner{
+    padding-top: 20vh;
+}
+
+.vac-body{
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.vac-body p{
+    padding: 0;
+    padding-bottom: 0; 
+}
+
+.title-header h1{
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+.vacancies{
+    max-width: 80%;
+    width: 100%;
+    margin: 0  15px;
+    padding: 15px;
+    background: rgb(209, 185, 167);
+    border-radius: 8px;
+}
+
+.vacancies .vac-container{
+    border-radius: 4px;
+background: rgb(245, 216, 201);
+border:  1px solid rgb(145, 117, 117);
+}
+
+.vac-container header{
+    display: flex;
+    min-height: 50px;
+    background-color: rgb(109, 74, 65);
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.vac-container .description{
+    padding: 0 15px;
+}
+
+.vac-header{
+min-height: 65vh;
+width: 100%;
+background-image: linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0, 0.7)), url(images/vacan-banner.png);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+header .text-box{
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+/* Application page */
+
+.apply-header{
+    min-height: 65vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0, 0.7)), url(images/apply-p.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.apply-text-box h1{
+    color: white;
+    padding-top: 35vh;
+    font-size: 55px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.apply-text-box p{
+    color: white;
+    font-size: 25px;
+    padding: -13px;
+    text-align: center;
+    padding-top: 2%;
+    text-transform: uppercase;
+}
+
+.container-apply{
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+
+
+
+.apply-box{
+    max-width: 680px ;
+    padding: 20px;
+    background: rgb(236, 221, 211);
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-control span{
+    font-size: smaller;
+    font-style: italic;
+    font-weight: 300;
+}
+.text-area-control span{
+    font-size: smaller;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.form-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.apply-box label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 6px 10px;
+    border: 1px solid rgb(140, 126, 126);
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+ .apply-box input select .text-area-control,  :focus{
+    outline-color: rgb(95, 43, 17);
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+ button{
+    background-color: rgb(67, 38, 27);
+    border: transparent;
+    padding: 5px 10px;
+    color: white;
+    border-radius:8px ;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+
+}
+
+ button:hover{
+    background-color: rgb(176, 146, 131);
+    border: 2px solid rgb(67, 38, 27);
+    color: black;
+    transition: 0.3s ease-out ;
+    cursor: pointer;
+}
+
+.text-area-control {
+    grid-column: 1 / span 2;
+    display: flex;
+    
+}
+
+label, .text-area-control label{
+    text-align: start;
+    padding-right: 5%;
+    font-weight: 500;
+}
+
+.text-area-control textarea {
+    width: 100%;
+}
+
+.apply-box h1{
+    letter-spacing: 2px;
+    color: rgb(67, 38, 27);
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.apply-box h1 span{
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .text-area-control{
+        grid-column: 1 / span 1;
+    }
+}
+
+/* CONTACT PAGE */
+
+.cta-body p{
+    padding: 0;
+    color: #fff;
+    font-weight: 400;
+
+}
+
+.cta-body{
+    
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    padding: 160px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(29, 18, 13, 0.8),rgba(29, 18, 13, 0.8)), url(images/ctabanner4.png);
+    background-size: cover;
+}
+
+.cta-body .contact-text-box{
+    max-width: 800px;
+    text-align: center;
+}
+
+.cta-body .contact-text-box h1{
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.cta-body .contact-text-box p{
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.cta-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+    
+}
+
+.cta-container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+ .cta-box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.cta-body .fa-regular, .cta-body .fa-solid{
+    justify-content: center;
+    min-width: 60px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    font-size: 26px ;
+    color: black;
+    background-color:white;
+
+}
+
+.cta-container .contact-info .cta-box .cta-text{
+    display: flex;
+    margin-left:20px ;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.cta-container .contact-info .cta-box .cta-text h2{
+    font-weight: 400;
+    color: rgb(221, 199, 195);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.cta-form{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    border-radius: 30px;
+}
+
+.cta-form h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(60, 30, 19);
+}
+.cta-form h2 span{
+    color: black;
+}
+
+.cta-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.cta-form .input-box input, .cta-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(60, 30, 19);
+    outline: none;
+    resize: none;
+}
+
+.input-box label{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box textarea:focus ~ label,
+.input-box textarea:valid ~ label
+
+ {
+font-size: 12px;
+color: rgb(70, 33, 15);
+transform: translateY(-20px);
+
+}
+
+.input-box input[type="submit"]
+{
+    width: 100px;
+    background: rgb(110, 81, 72);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media(max-width:991px){
+    .cta-body{
+        padding: 50px;
+    }
+    .cta-container{
+        flex-direction: column;
+    }
+    .cta-container .contact-info{
+        margin-bottom: 40px;
+    }
+}
+.cta-container .contact-info, .cta-form{
+    width: 100%;
+}
+
+/*VACANCIES*/
+
+.accordion-page *::before,
+*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.accordion-page section {
+    padding-top: 20vh;
+    width: 100%;
+    height: 100vh;
+    background-color: #c2a295;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 80rem;
+    margin: 50px auto;
+    padding: 0 1.5rem;
+  }
+  
+  .accordion-item{
+    background-color: #c2a295;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-left: 2%;
+  }
+  
+  .accordion-item hr{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .accordion-link{
+    font-size: 1.6rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color:#c2a295;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0;
+    border-radius: 10px;
+  }
+  
+  .accordion-link h3{
+    font-weight:500;
+    font-size: 20px;
+  }
+  
+  .accordion-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+    
+  }
+  
+  .accordion-link ul{
+    display:flex;
+    align-items: flex-end;
+    list-style-type: none;
+    margin-left: 25px;
+    border-radius: 10px;
+  }
+  
+  .accordion-link li{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 0 0 1px 5px;
+  }
+  
+  .accordion-link div{
+    display: flex;
+    
+  }
+  
+  .accordion-link .ion-md-arrow-down{
+    display: none;
+  }
+  
+  .answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #c2a295;
+    transition: max-height 650ms;
+  }
+  
+  
+  
+  .answer p{
+    color: #fff;
+    font-size: 15px;
+    padding: 2rem;
+    
+  }
+  
+  .accordion-item:target .answer{
+    max-height: 20rem;
+  }
+  
+  .accordion-item:target .accordion-link .ion-md-arrow-forward{
+    display: none
+  }
+  
+  .accordion-item:target .accordion-link .ion-md-arrow-down{
+    display: block;
+  }
+
+  hr{
+    height: 3px;
+    color: white;
+    background: #fff;
+  }
+
+  .container-apply .teaming{
+    border-radius: 0;
+    width: 100%;
+    margin-top: 150px;
+    padding: 80px 0;
+  }
+
+   .apply-link{
+    max-width: 100%;
+    
+  }

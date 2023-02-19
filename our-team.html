@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" 
+rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4f9da7970e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <section class="team-header">
+        <nav>
+            <a href="index.html"><img src="images/Hot Beans Web-1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>                </i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="our-team.html">OUR TEAM</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="apply.html">APPLY</a>
+                    </li>
+                    <li>
+                        <a href="vacancies.html">VACANCIES</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+<div class="team-textbox">
+    <h1>Our Team</h1>
+    
+</div>
+</header>
+    </section>
+    
+    <div class="team-container">
+        <div class="sub-heading">
+        <h1><span>M</span>eet our <span>T</span>eam</h1>
+        <div class="profiles ">
+            <div class="profile">
+                <img src="images/emplyee.png" class="profile-img">
+
+                <h3 class="team-name">Christina Falous</h3>
+                <h4>POSITION:CEO</h4>
+                <p>She is the Ceo and founder of the Hot Beans Web company. She loves her business. She studied at oxford university. She's been interestend in webdevelopment since she was liite.She has an eye for design and colours and uses it to his advantage. Leading a team of junior web developers, she is also able to lead projects that can be completed within weeks, instead of months. </p>
+            </div>
+
+            <div class="profile">
+                <img src="images/emplyee6.png" class="profile-img">
+
+                <h3 class="team-name">Jassica Boateng</h3>
+                <h4>POSITION: MANAGER</h4>
+                <p>Is a web developer currently working under Christina Falou as her second hand / manager Jassica is just one of many trainee web developers who are all just as excited as we are to join the team as full web developers. She has been working for the company since the beginning. The CEO and her are the  main heads of the company.</p>
+            </div>
+
+            <div class="profile">
+                <img src="images/emplyee8.png" class="profile-img">
+
+                <h3 class="team-name">Aubrey Drake Graham</h3>
+                <h4>POSITION: TRAINEE</h4>
+                <p>Recently finished his BTEC Level 3 IT course at Stockport Collge, Drake has shown Hot Beans Web a huge potential of skills. His familiy is suprisingly also a sponsor to our Company.</p>
+            </div>
+            <div class="profile">
+                <img src="images/emplyee7.png" class="profile-img">
+
+                <h3 class="team-name">Frank Ocean</h3>
+                <h4>POSITION: </h4>
+                <p>He is one of many web developers we have at Hot Beans Web. He is working on lots of projects at the moment for our multiple clients and is currently leading two major projects for the company. Frank ocean is a
+                crucial part of the Hot Beans team and without developers like Frank we wouldn’t be able to produce outstanding content.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="about-link">
+        <div class="teaming">
+        <h2>Learn more about us</h2>
+        <div class="join-btn">
+            <a href="about.html">About us</a>
+        </div>
+        </div>
+</section>
+
+<section class="apply-link">
+    <section class="cta">
+        <h2>Are you interested in working for us? <br>Then apply now</h2>
+        <a href="apply.html" class="join-btn">apply</a>
+    
+    </section>
+</section>
+
+
+
+<section class="footer">
+
+    <p>Copyright 2023 &copy; Hot Beans Web Limeted</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made by Gabriela Manu</p>
+</section>
+
+<script>
+    const nav = document.querySelector('nav')
+    
+    window.addEventListener('scroll', () => {
+        console.log(window.scrollY);
+        console.log(window.scrollX);
+        if (window.scrollY>=180) {
+            nav.classList.add('active_nav');
+        } else {
+            nav.classList.remove('active_nav')
+            
+        }
+    })
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu (){
+    navLinks.style.right = "0"
+    }
+    function hideMenu (){
+    navLinks.style.right = "-250px"
+    }   
+</script>
+</body>
+</html>
